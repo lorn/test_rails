@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: super_awesome_api_production
-  username: super_awesome_api
-  password: <%= ENV['SUPER_AWESOME_API_DATABASE_PASSWORD'] %>
+  url:  <%= ENV['DATABASE_URL'] %>
